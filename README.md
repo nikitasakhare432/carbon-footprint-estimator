@@ -1,14 +1,19 @@
- Carbon Footprint Estimator
-This is a website where you can calculate your carbon footprint based on things like your travel, electricity use, and diet.
-It will show you results in charts and give you ideas on how to reduce your footprint.
-==========================================================================================================================
+Carbon Footprint Estimator
+<small>This is a website where you can calculate your carbon footprint based on things like your travel, electricity use, and diet.
+It will show you results in charts and give you ideas on how to reduce your footprint.</small>
  What it does
+<small>
 Ask questions about your lifestyle (car use, electricity, food, travel, etc.)
+
 Calculate how much CO₂ you produce
+
 Show results in easy-to-read charts
+
 Work on both phones and computers
+
 Save your results and download them as a PDF
-===========================================================================================================
+
+</small>
 Technologies used:
 Frontend (Website part you see)
 React

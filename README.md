@@ -23,12 +23,12 @@ Backend (Server part that handles data)
 Node.js
 Express.js
 SQLite (small database)
-<img width="1920" height="1020" alt="Screenshot 2025-08-08 204402" src="https://github.com/user-attachments/assets/dd6ef524-2bdc-4622-b9b3-276bbfee8aa7" />
-<img width="1920" height="1020" alt="Screenshot 2025-08-08 204418" src="https://github.com/user-attachments/assets/3532b572-7776-4fb0-a48f-a1281a7e90ab" />
-<img width="1920" height="1020" alt="Screenshot 2025-08-08 204441" src="https://github.com/user-attachments/assets/a59f4852-510c-4949-be16-24c39510b688" />
-<img width="1920" height="1020" alt="Screenshot 2025-08-08 204452" src="https://github.com/user-attachments/assets/afa493db-ae0c-42ac-8eae-19011378569b" />
-<img width="1920" height="1020" alt="Screenshot 2025-08-08 204556" src="https://github.com/user-attachments/assets/a99a4da9-32c8-45e0-90a9-00dbfee7aa98" />
-<img width="1920" height="1020" alt="Screenshot 2025-08-08 204502" src="https://github.com/user-attachments/assets/32951a4c-be61-4516-bdc5-1b1cbbfa7097" />
+<img width="1920" height="1020" alt="Screenshot 2025-08-08 204402" src="https://github.com/user-attachments/assets/dd6ef524-2bdc-4622-b9b3-276bbfee8aa7" width="400" />
+<img width="1920" height="1020" alt="Screenshot 2025-08-08 204418" src="https://github.com/user-attachments/assets/3532b572-7776-4fb0-a48f-a1281a7e90ab" width="400" />
+<img width="1920" height="1020" alt="Screenshot 2025-08-08 204441" src="https://github.com/user-attachments/assets/a59f4852-510c-4949-be16-24c39510b688" width="400" />
+<img width="1920" height="1020" alt="Screenshot 2025-08-08 204452" src="https://github.com/user-attachments/assets/afa493db-ae0c-42ac-8eae-19011378569b" width="400" />
+<img width="1920" height="1020" alt="Screenshot 2025-08-08 204556" src="https://github.com/user-attachments/assets/a99a4da9-32c8-45e0-90a9-00dbfee7aa98" width="400"/>
+<img width="1920" height="1020" alt="Screenshot 2025-08-08 204502" src="https://github.com/user-attachments/assets/32951a4c-be61-4516-bdc5-1b1cbbfa7097" width="400"/>
 
 
 

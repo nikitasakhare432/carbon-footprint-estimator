@@ -76,7 +76,7 @@ db.serialize(() => {
 });
 
 // Calculate carbon footprint
-app.post('/api/calculate', (req, res) => {
+app.post('https://carbon-footprint-estimator-wuq3.onrender.com/calculate', (req, res) => {
   try {
     const {
       vehicle: { type, kmPerWeek },
@@ -90,11 +90,11 @@ app.post('/api/calculate', (req, res) => {
     const vehicleEmissions = (kmPerWeek * 52 * EMISSION_FACTORS.vehicles[type]) / 1000; // tonnes
     const electricityEmissions = (kwhPerMonth * 12 * EMISSION_FACTORS.electricity) / 1000; // tonnes
     const flightEmissions = (
-      (shortHaul * EMISSION_FACTORS.flights.short) + 
+      (shortHaul * EMISSION_FACTORS.flights.short) +
       (longHaul * EMISSION_FACTORS.flights.long)
     ) / 1000; // tonnes
     const dietEmissions = EMISSION_FACTORS.diet[dietType] / 1000; // tonnes
-    
+
     // Other emissions
     const publicTransportEmissions = publicTransportKm ? (publicTransportKm * 52 * EMISSION_FACTORS.publicTransport) / 1000 : 0;
     const heatingEmissions = heatingType && heatingKwh ? (heatingKwh * 12 * EMISSION_FACTORS.heating[heatingType]) / 1000 : 0;
@@ -198,13 +198,13 @@ function generateSuggestions({ vehicleEmissions, electricityEmissions, flightEmi
 }
 
 // Contact form endpoint
-app.post('/api/contact', (req, res) => {
+app.post('https://carbon-footprint-estimator-wuq3.onrender.com/contact', (req, res) => {
   const { name, email, message } = req.body;
 
   db.run(`
     INSERT INTO contact_messages (name, email, message)
     VALUES (?, ?, ?)
-  `, [name, email, message], function(err) {
+  `, [name, email, message], function (err) {
     if (err) {
       console.error('Contact form error:', err);
       res.status(500).json({ error: 'Failed to save message' });
@@ -215,9 +215,9 @@ app.post('/api/contact', (req, res) => {
 });
 
 // Get historical results
-app.get('/api/results/:userId', (req, res) => {
+app.get('https://carbon-footprint-estimator-wuq3.onrender.com/results/:userId', (req, res) => {
   const { userId } = req.params;
-  
+
   db.all(`
     SELECT total_emissions, created_at
     FROM results 

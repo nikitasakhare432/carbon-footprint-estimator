@@ -76,7 +76,7 @@ db.serialize(() => {
 });
 
 // Calculate carbon footprint
-app.post('https://carbon-footprint-estimator-wuq3.onrender.com/calculate', (req, res) => {
+app.post('/api/calculate', (req, res) => {
   try {
     const {
       vehicle: { type, kmPerWeek },
@@ -198,7 +198,7 @@ function generateSuggestions({ vehicleEmissions, electricityEmissions, flightEmi
 }
 
 // Contact form endpoint
-app.post('https://carbon-footprint-estimator-wuq3.onrender.com/contact', (req, res) => {
+app.post('/api/contact', (req, res) => {
   const { name, email, message } = req.body;
 
   db.run(`
@@ -215,7 +215,7 @@ app.post('https://carbon-footprint-estimator-wuq3.onrender.com/contact', (req, r
 });
 
 // Get historical results
-app.get('https://carbon-footprint-estimator-wuq3.onrender.com/results/:userId', (req, res) => {
+app.get('/api/results/:userId', (req, res) => {
   const { userId } = req.params;
 
   db.all(`

@@ -13,7 +13,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "https://carbon-footprint-estimator-wuq3.onrender.com/calculate", // Your Render backend URL
+        "https://carbon-footprint-estimator-wuq3.onrender.com/api/calculate", // Your Render backend URL
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

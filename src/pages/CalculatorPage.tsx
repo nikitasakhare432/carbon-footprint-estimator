@@ -83,7 +83,7 @@ const CalculatorPage = () => {
   const handleSubmit = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:3001/api/calculate', {
+      const response = await fetch('https://carbon-footprint-estimator-wuq3.onrender.com/api/calculate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
